@@ -5,7 +5,7 @@ To get the speakers from sonos2mqtt into homeassistant you have to use this comp
 
 [![HACS Custom][badge_integration]][link_integration-repo] [![Github stars][badge_integration-stars]][link_integration-repo] [![Github issues][badge_integration-issues]][link_integration-issues]
 
-[![Support me on Github][badge_sponsor]][link_sponsor] [![Follow on Twitter][badge_twitter]][link_twitter]
+[![Support me on Github][badge_sponsor]][link_sponsor] [![Follow on BlueSky][badge_bluesky]][link_bluesky]
 
 ## Installation
 
@@ -15,7 +15,7 @@ To get the speakers from sonos2mqtt into homeassistant you have to use this comp
 
 Custom repository details:
 
-- Repository: `svrooij/home-assistant-mqtt-component/`
+- Repository: `svrooij/homeassistant-sonos2mqtt/`
 - Category: `Integration`
 
 ## Works with
@@ -79,12 +79,12 @@ git config --global user.email "youremail@somedomain.com"
 [badge_sonos-mqtt-stars]: https://img.shields.io/github/stars/svrooij/sonos2mqtt?logo=github&style=for-the-badge
 
 [badge_sponsor]: https://img.shields.io/github/sponsors/svrooij?logo=github&style=for-the-badge
-[badge_twitter]: https://img.shields.io/twitter/follow/svrooij?logo=twitter&style=for-the-badge&logoColor=white
+[badge_bluesky]: https://img.shields.io/bluesky/followers/svrooij.io?logo=bluesky&style=for-the-badge&logoColor=white
 
 [link_devcontainer]: https://code.visualstudio.com/docs/devcontainers/containers
-[link_integration-issues]: https://github.com/svrooij/home-assistant-mqtt-component/issues
-[link_integration-pr]: https://github.com/svrooij/home-assistant-mqtt-component/pulls
-[link_integration-repo]: https://github.com/svrooij/home-assistant-mqtt-component
+[link_integration-issues]: https://github.com/svrooij/homeassistant-sonos2mqtt/issues
+[link_integration-pr]: https://github.com/svrooij/homeassistant-sonos2mqtt/pulls
+[link_integration-repo]: https://github.com/svrooij/homeassistant-sonos2mqtt
 
 [link_sonos-mqtt]: https://svrooij.io/sonos2mqtt
 [link_sonos-mqtt-docker]: https://hub.docker.com/r/svrooij/sonos2mqtt
@@ -92,4 +92,4 @@ git config --global user.email "youremail@somedomain.com"
 [link_sonos-mqtt-repo]: https://github.com/svrooij/sonos2mqtt
 
 [link_sponsor]: https://github.com/sponsors/svrooij
-[link_twitter]: https://twitter.com/svrooij
+[link_bluesky]: https://bsky.app/profile/svrooij.io

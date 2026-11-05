@@ -3,9 +3,9 @@
 {
 	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/python:0-3.10",
+	"image": "mcr.microsoft.com/devcontainers/python:3.15",
 	"features": {
-		"ghcr.io/devcontainers-contrib/features/pylint:2": {}
+		"ghcr.io/devcontainers-extra/features/pylint:2": {}
 	},
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
@@ -41,7 +41,7 @@
 				"python.analysis.autoSearchPaths": false,
 				// This makes sure the home assistant types are loaded into the editor
 				"python.analysis.extraPaths": [
-					"/home/vscode/.local/lib/python3.10/site-packages/"
+					"/home/vscode/.local/lib/python3.15/site-packages/"
 				],
 				"python.linting.pylintEnabled": true,
 				"python.linting.enabled": true,
