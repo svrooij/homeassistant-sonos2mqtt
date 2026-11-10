@@ -22,7 +22,6 @@ from homeassistant.components.media_player import (
     MediaType,
     RepeatMode,
     async_process_play_media_url,
-    _rename_keys,
 )
 from homeassistant.components.mqtt.models import ReceiveMessage
 from homeassistant.config_entries import ConfigEntry
@@ -134,12 +133,7 @@ async def async_setup_entry(
 
     platform.async_register_entity_service(
         SERVICE_GROUP_VOLUME,
-        vol.All(
-            cv.make_entity_service_schema(
-                {vol.Required(ATTR_MEDIA_VOLUME_LEVEL): cv.small_float}
-            ),
-            _rename_keys(volume=ATTR_MEDIA_VOLUME_LEVEL),
-        ),
+        {vol.Required(ATTR_MEDIA_VOLUME_LEVEL): cv.small_float},
         "async_set_group_volume",
     )
 
@@ -503,9 +497,9 @@ class SonosMediaPlayerEntity(MediaPlayerEntity):
         """Cancel the snoozed alarm"""
         await self._conn.send_command("snooze", "")
 
-    async def async_set_group_volume(self, volume: float) -> None:
+    async def async_set_group_volume(self, volume_level: float) -> None:
         """Send volume and unmute command to mqtt."""
-        await self._conn.send_command("groupvolume", volume * 100)
+        await self._conn.send_command("groupvolume", volume_level * 100)
 
     async def async_group_volume_up(self) -> None:
         """Send group volume up command to mqtt."""
